@@ -41,7 +41,7 @@ class PostgresCompiler extends QueryCompiler
     protected $_templates = [
         'delete' => 'DELETE',
         'where' => ' WHERE %s',
-        'group' => ' GROUP BY %s ',
+        'group' => ' GROUP BY %s',
         'order' => ' %s',
         'limit' => ' LIMIT %s',
         'offset' => ' OFFSET %s',
