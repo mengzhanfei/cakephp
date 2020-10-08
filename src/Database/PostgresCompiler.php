@@ -88,6 +88,6 @@ class PostgresCompiler extends QueryCompiler
             }
         }
 
-        return sprintf('HAVING %s', implode(', ', $parts));
+        return sprintf(' HAVING %s', implode(', ', $parts));
     }
 }

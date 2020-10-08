@@ -2323,8 +2323,8 @@ class QueryTest extends TestCase
         $this->assertSame(
             'SELECT id FROM authors Authors WHERE ' .
             '(FUNC( Authors.id) = :c0 AND (FUNC( Authors.id)) IS NOT NULL) ' .
-            'HAVING COUNT(DISTINCT Authors.id) = :c1 ',
-            $query->sql()
+            'HAVING COUNT(DISTINCT Authors.id) = :c1',
+            trim($query->sql())
         );
     }
 
